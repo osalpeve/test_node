@@ -5,7 +5,7 @@ const servidor = http.createServer((req,res)=>{
         res.end('pagina principal')
     }
     if (req.url === '/about'){
-        // esta sincronia bloquea todo el codigo
+
         for (i = 0; i < 100; i++){
             for (j = 0; j < 100; j++){
                 console.log(` ${i} ${j}`)
